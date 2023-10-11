@@ -26,7 +26,7 @@ public class FirstPage extends BaseClass {
 
       By test = By.id("login");
       By test2=By.xpath("//*[@id='login']");
-      By test3=By.cssSelector("input#login");
+      By test3=By.cssSelector("input#login1");
 
     public FirstPage(WebDriver driver){
         super(driver);
