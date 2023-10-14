@@ -2,6 +2,7 @@ package BaseTestComponents;
 
 import SeleniumTest.Common.PropertyFileReader;
 import SeleniumTest.PageObjects.FirstPage;
+import SeleniumTest.PageObjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +19,7 @@ public class TestBase
 
 {
        public WebDriver driver;
-       public FirstPage firstPage;
+       public LandingPage landingPage;
 
        public WebDriver initializeDriver() throws IOException {
 
@@ -51,10 +52,10 @@ public class TestBase
        }
 
 
-       public FirstPage launchApplication() throws IOException {
+       public LandingPage launchApplication() throws IOException {
               driver = initializeDriver();
-              firstPage = new FirstPage(driver);
-              firstPage.goTo();
-              return firstPage;
+              landingPage = new LandingPage(driver);
+              landingPage.goTo();
+              return landingPage;
        }
 }

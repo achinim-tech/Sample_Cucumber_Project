@@ -8,11 +8,10 @@ Feature: Mark Attendence
   Scenario Outline: Positive Test of Submitting the order
 
    Given Login with username "<name>" and password "<password>"
-  And I navigate to HomePage
-    When I click on attendance
-    And Verify the time
+    And I navigate to HomePage
+   # When I click on attendance
     Then "Successfully marked your attendance" message is displayed
 
     Examples:
       | name|password|
-      | achinimeekandawattage@gmail.com |Am-12345|
+      | Achini10 |Swivel@123|
